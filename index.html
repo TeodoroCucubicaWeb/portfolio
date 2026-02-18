@@ -3,81 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/nerd.png" type="image/x-icon">
   <title>Portfólio Teodoro Web</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f5f5f5;
-      color: #333;
-      transition: background 0.3s, color 0.3s;
-    }
-    header {
-      background: #4a90e2;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    header img {
-      width: 120px;
-      border-radius: 50%;
-      margin-bottom: 1rem;
-    }
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      border-bottom: 2px solid #4a90e2;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
-    }
-    .projetos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-    }
-    .card {
-      background: white;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
-    }
-    .card:hover {
-      transform: scale(1.05);
-    }
-    footer {
-      background: #4a90e2;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-    .dark-mode {
-      background: #1e1e1e;
-      color: #f5f5f5;
-    }
-    .dark-mode header, .dark-mode footer {
-      background: #111;
-    }
-    .dark-mode .card {
-      background: #2a2a2a;
-      color: #f5f5f5;
-    }
-    .toggle-btn {
-      margin-top: 1rem;
-      padding: 0.5rem 1rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      background: #fff;
-      color: #4a90e2;
-      font-weight: bold;
-    }
-  </style>
+  <link rel="stylesheet" href="style/estilo.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -94,12 +23,39 @@
 
   <section>
     <h2>Habilidades</h2>
-    <ul>
+
+    <ol>
+      <li>
+        Desenvolvidor Front-End:
+      </li>
+      <ul>
+        <li>HTML5: Estruturação de páginas web.</li>
+        <li>CSS: Layouts responsivos e design.</li>
+        <li>JavaScript: Manipulação do DOM e lógica de programação.</li>
+        <li>Github: Gestão das actualizações de páginas.</li>
+      </ul>
+      <li>Resolução de Problemas:</li>
+      <ul>
+        <li>Pensamento Crítico: Análise de problemas e busca por soluções lógicas</li>
+      </ul>
+      <li>Aprendizado Contínuo:</li>
+      <ul>
+        <li>Autodidata: A habilidade de aprender novas tecnologias de forma autônoma e rápida.</li>
+        <li>Mentoria: A capacidade de ensinar outras pessoas e compartilhar conhecimento.</li>
+      </ul>
+      <li>Empatia e Inteligência Emocional</li>
+      <ul>
+        <li>Empatia: Capacidade de entender as necessidades do cliente ou do usuário.</li>
+        <li>Resiliência: Saber lidar com feedbacks negativos e continuar a melhorar.</li>
+      </ul>
+    </ol>
+
+    <!-- <ul>
       <li>HTML, CSS, JavaScript</li>
       <li>React, Node.js</li>
       <li>Design Responsivo</li>
       <li>Git & GitHub</li>
-    </ul>
+    </ul> -->
   </section>
 
   <section>
@@ -127,8 +83,14 @@
   </section>
 
   <footer>
-    <p>&copy; 2026 Teodoro Cucubica Web - Todos os direitos reservados</p>
-  </footer>
+  <p>&copy; 2026 Teodoro Cucubica Web - Todos os direitos reservados</p>
+  <div class="social-icons">
+    <a href="https://facebook.com/seuperfil" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://wa.me/SEUNUMERODEWHATSAPP" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://youtube.com/seucanal" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+    <a href="https://github.com/seuperfil" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+  </div>
+</footer>
 
   <script>
     function toggleMode() {
