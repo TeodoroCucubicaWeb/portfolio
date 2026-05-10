@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="img/nerd.png" type="image/x-icon">
-  <title>Portfólio Teodoro Web</title>
-  <link rel="stylesheet" href="style/estilo.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Meu Portfólio | Desenvolvedor Teodoro</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="portifolio2.css">
 </head>
 <body>
-  <header>
-    <img src="img/teodoro.jpg" alt="Foto de perfil">
-    <h1>Teodoro Cucubica Web</h1>
-    <p>Desenvolvedor Web | Criativo | Apaixonado por Tecnologia</p>
-    <button class="toggle-btn" onclick="toggleMode()">🌙 Alternar Tema</button>
-  </header>
 
+<header>
+    <img src="img/teodoro.jpg" alt="Foto de perfil">
+    <h1>Olá, eu sou o <span style="color: var(--primary);">Teodoro Web</span></h1>
+    <p>Desenvolvedor focado em criar soluções tecnológicas para a gestão eficiente e resolução dos problemas diários.</p>
+</header>
   <section>
     <h2>Sobre Mim</h2>
     <p>Sou um desenvolvedor apaixonado por criar experiências digitais incríveis. Tenho experiência em HTML, CSS, JavaScript e frameworks modernos. Gosto de aprender e compartilhar conhecimento.</p><br>
@@ -49,54 +47,76 @@
         <li>Empatia: Capacidade de entender as necessidades do cliente ou do usuário.</li>
         <li>Resiliência: Saber lidar com feedbacks negativos e continuar a melhorar.</li>
       </ul>
-    </ol>
+    </ol><br>
 
-    <!-- <ul>
-      <li>HTML, CSS, JavaScript</li>
-      <li>React, Node.js</li>
-      <li>Design Responsivo</li>
-      <li>Git & GitHub</li>
-    </ul> -->
-  </section>
+<div class="container">
+    <div class="projects-grid">
+        <h2>Projetos</h2>
+        <!-- PROJETO 1: JOGO BÍBLICO -->
+            <div class="project-card">
+            <div style="height: 200px; background: #1a5f7a; display: flex; align-items: center; justify-content: center; font-size: 4rem;">📖</div>
+            <div class="project-info">
+                <h3>Sou Cristão e Conheço a Bíblia</h3>
+                <p>Um jogo de quiz interativo com cronómetro, níveis de dificuldade e referências bíblicas em tempo real.</p>
+                <a href="jogo.html" class="btn">Jogar Agora</a>
+            </div>
+        </div>
 
-  <section>
-    <h2>Projetos</h2>
-    <div class="projetos">
-      <div class="card">
-        <img src="img/demonline.jpeg" alt="demonline">
-        <h3>Demonline</h3>
-        <p>Plataforma para assistir todas as temporadas do anime Demon Slayer.</p>
-        <a href="https://teodorocucubicaweb.github.io/demonline/">Ver Projeto</a>
-      </div>
-      <div class="card">
-        <img src="img/portfolio-escuro.jpeg" alt="portfolio">
-        <h3>Portfólio Pessoal</h3>
-        <p>Meu site pessoal para mostrar habilidades e projetos.</p>
-        <a href="index.html">Ver Projeto</a>
-      </div>
-      <div class="card">
-        <img src="img/entre-coracao.jpeg" alt="entre coracao e a mente">
-        <h3>Entre o coração e a Mente</h3>
-        <p>Livro atraente e com conteúdos que vale apenas ler.</p>
-        <a href="https://teodorocucubicaweb.github.io/coracaoVSmente/">Ver Projeto</a>
-      </div>
+        <!--PROJECTO 2: lIVRO ENTRE CORAÇÃO E A MENTE-->
+        <div class="project-card">
+        <div style="height: 200px; background: #1a5f7a; display: flex; align-items: center; justify-content: center; font-size: 4rem;"><img style="height: 150px; width: 100px;" src="img/coraco2.jpg" alt="entre coracao e a mente"></div>
+            <div class="project-info">
+                <h3>Entre o coração e a Mente</h3>
+                <p>Um livro atraente e com conteúdos que valem apenas ler.</p>
+                <a href="jogo.html" class="btn">Ler Agora</a>
+            </div>
+        </div>
+
+        <!-- PROJETO 2: GESTÃO DE IGREJA -->
+        <div class="project-card">
+            <div style="height: 200px; background: #4f46e5; display: flex; align-items: center; justify-content: center; font-size: 4rem;">⛪</div>
+            <div class="project-info">
+                <h3>Gestor de Células Cloud</h3>
+                <p>Aplicação sincronizada com Firebase para gestão de membros, presença e pedidos de oração em tempo real.</p>
+                <a href="gestao.html" class="btn">Abrir App</a>
+            </div>
+        </div>
+
+         <div class="project-card">
+        <div style="height: 200px; background: #ddd; display: flex; align-items: center; justify-content: center; font-size: 4rem;"><img style="height: 150px; width: 180px;" src="img/demonline.jpeg" alt="Demonline"></div>
+            <div class="project-info">
+                <h3>Demonline</h3>
+                <p>Plataforma para assistir todas as temporadas de Demon Slayer.</p>
+                <span style="color: #94a3b8; font-style: italic;">Em desenvolvimento...</span>
+            </div>
+        </div>
+
+        <!-- PROJETO 3: (ESPAÇO PARA O PRÓXIMO) -->
+        <div class="project-card">
+            <div style="height: 200px; background: #ddd; display: flex; align-items: center; justify-content: center; font-size: 4rem;">🚀</div>
+            <div class="project-info">
+                <h3>Próximo Grande Projeto</h3>
+                <p>Sempre a aprender novas tecnologias para servir melhor o Reino e o mercado de trabalho.</p>
+                <span style="color: #94a3b8; font-style: italic;">Em desenvolvimento...</span>
+            </div>
+        </div>
+
     </div>
-  </section>
+</div>
 
-  <footer>
-  <p>&copy; 2026 Teodoro Cucubica Web - Todos os direitos reservados</p>
-  <div class="social-icons">
+<footer>
+    <p>Vamos conversar?</p>
+    <div class="social-links">
+        <a href="https://github.com">GitHub</a>
+        <a href="mailto:seu-email@gmail.com">E-mail</a>
+    </div>
+    <p style="margin-top: 20px; font-size: 0.8rem; opacity: 0.6;">© 2024 - Criado com Fé e Código.</p>
+</footer>
+<div class="social-icons">
     <a href="https://facebook.com/profile.php?id=61585821137131&milbextidrS0aB7S9Ucbxw6v" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
     <a href="https://wa.me/SEUNUMERODEWHATSAPP" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
     <a href="https://youtube.com/seucanal" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
     <a href="https://github.com/teodorocucubicaweb.github.io" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
   </div>
-</footer>
-
-  <script>
-    function toggleMode() {
-      document.body.classList.toggle("dark-mode");
-    }
-  </script>
 </body>
 </html>
