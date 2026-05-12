@@ -22,7 +22,7 @@
             padding: 20px;
         }
       header img {
-      width: 150px;
+      width: 200px;
       border-radius: 50%;
       margin-bottom: 1rem;
     }
@@ -108,6 +108,14 @@
         }
 
         .btn:hover { background: #1d4ed8; }
+
+        #titleLivro{
+          color: rgba(34, 0, 0, 0.932) ;
+        }
+
+        #btnLivro{
+          background-color: rgba(34, 0, 0, 0.932);
+        }
 
         /* Contacto */
         footer { text-align: center; padding: 50px 20px; background: #e2e8f0; }
