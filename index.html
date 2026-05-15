@@ -5,32 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O Meu Portfólio | Desenvolvedor Teodoro</title>
     <link rel="shortcut icon" href="img/nerd.png" type="image/x-icon">
-    
-    <!-- LINK CORRIGIDO: Carrega o Font Awesome corretamente da internet -->
-    <link rel="stylesheet" href="https://cloudflare.com">
-    
     <link rel="stylesheet" href="portifolio2.css">
+    <!-- ÍCONES DAS REDES SOCIAIS (Font Awesome) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
 </head>
 <body>
+
+<!-- BARRA LATERAL FIXA DE REDES SOCIAIS -->
+<!-- <div class="social-sidebar"> -->
+    <!-- Substitui os '#' pelos teus links reais -->
+    <!-- <a href="#" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://wa.me" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+    <a href="#" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
+</div> -->
 
 <header>
     <img src="img/teodoro.jpg" alt="Foto de perfil">
     <h1>Olá, eu sou o <span style="color: var(--primary);">Teodoro Web</span></h1>
     <p>Desenvolvedor focado em criar soluções tecnológicas para a gestão eficiente e resolução dos problemas diários.</p>
 </header>
-  <section>
+
+<section>
     <h2>Sobre Mim</h2>
     <p>Sou um desenvolvedor apaixonado por criar experiências digitais incríveis. Tenho experiência em HTML, CSS, JavaScript e frameworks modernos. Gosto de aprender e compartilhar conhecimento.</p><br>
     <address><p>Localização: Angola/Luanda-Kilamba</p></address>
-  </section>
+</section>
 
-  <section>
+<section>
     <h2>Habilidades</h2>
-
     <ol>
-      <li>
-        Desenvolvidor Front-End:
-      </li>
+      <li>Desenvolvidor Front-End:</li>
       <ul>
         <li>HTML5: Estruturação de páginas web.</li>
         <li>CSS: Layouts responsivos e design.</li>
@@ -52,33 +58,39 @@
         <li>Resiliência: Saber lidar com feedbacks negativos e continuar a melhorar.</li>
       </ul>
     </ol><br>
+</section>
 
 <div class="container">
     <div class="projects-grid">
         <h2>Projetos</h2>
+        
         <!-- PROJETO 1: JOGO BÍBLICO -->
-            <div class="project-card">
-            <div style="height: 200px; background: #1a5f7a; display: flex; align-items: center; justify-content: center; font-size: 4rem;"><img style="height: 160px; width: 180px;" src="img/jogoBiblia.png" alt="Jogo Biblico"></div>
+        <div class="project-card">
+            <div style="height: 250px; background: #1a5f7a; display: flex; align-items: center; justify-content: center; font-size: 4rem;">
+                <img style="height: 230px; width: 180px;" src="img/jogoBiblia.png" alt="Jogo Biblico">
+            </div>
             <div class="project-info">
                 <h3>Sou Cristão e Conheço a Bíblia</h3>
                 <p>Um jogo de quiz interativo com cronómetro, níveis de dificuldade e referências bíblicas. Tudo que você precisa para fazer crescer o seu conhecimento biblico.</p>
-                <a href="https://github.io" class="btn">Jogar Agora</a>
+                <a href="https://teodorocucubicaweb.github.io/biblia" class="btn">Jogar Agora</a>
             </div>
         </div>
 
         <!--PROJECTO 2: lIVRO ENTRE CORAÇÃO E A MENTE-->
         <div class="project-card">
-        <div style="height: 200px; background: rgba(34, 0, 0, 0.932); display: flex; align-items: center; justify-content: center; font-size: 4rem;"><img style="height: 160px; width: 180px;" src="img/coraco2.jpg" alt="entre coracao e a mente"></div>
+            <div style="height: 250px; background: rgba(34, 0, 0, 0.932); display: flex; align-items: center; justify-content: center; font-size: 4rem;">
+                <img style="height: 230px; width: 160px;" src="img/coraco2.jpg" alt="entre coracao e a mente">
+            </div>
             <div class="project-info">
                 <h3 id="titleLivro">Entre o coração e a Mente</h3>
-                <p>Um livro que convida ao leitor a explorar a luta existente em todos nós. Entre o que se quer e o que se deve.</p>
-                <a href="https://github.io" class="btn" id="btnLivro">Ler Agora</a>
+                <p>Um livre que convida ao leitor a explorar a luta existente em todos nós. Entre o que se quer e o que se deve.</p>
+                <a href="https://teodorocucubicaweb.github.io/coracaoVSmente" class="btn" id="btnLivro">Ler Agora</a>
             </div>
         </div>
 
-        <!-- PROJETO 2: GESTÃO DE IGREJA -->
+        <!-- PROJETO 3: GESTÃO DE IGREJA -->
         <div class="project-card">
-            <div style="height: 200px; background: #4f46e5; display: flex; align-items: center; justify-content: center; font-size: 4rem;">⛪</div>
+            <div style="height: 250px; background: #4f46e5; display: flex; align-items: center; justify-content: center; font-size: 4rem;">⛪</div>
             <div class="project-info">
                 <h3>Gestor Da Igreja</h3>
                 <p>Aplicação sincronizada com Firebase para gestão de membros, presença e pedidos de oração em tempo real.</p>
@@ -86,8 +98,11 @@
             </div>
         </div>
 
-         <div class="project-card">
-        <div style="height: 200px; background: #ddd; display: flex; align-items: center; justify-content: center; font-size: 4rem;"><img style="height: 150px; width: 180px;" src="img/demonline.jpeg" alt="Demonline"></div>
+        <!-- PROJETO 4: DEMONLINE -->
+        <div class="project-card">
+            <div style="height: 250px; background: #ddd; display: flex; align-items: center; justify-content: center; font-size: 4rem;">
+                <img style="height: 240px; width: 200px;" src="img/demonline.jpeg" alt="Demonline">
+            </div>
             <div class="project-info">
                 <h3>Demonline</h3>
                 <p>Plataforma para assistir todas as temporadas do anime Demon Slayer.</p>
@@ -95,16 +110,15 @@
             </div>
         </div>
 
-        <!-- PROJETO 3: (ESPAÇO PARA O PRÓXIMO) -->
+        <!-- PROJETO 5: PRÓXIMO GRANDE PROJETO -->
         <div class="project-card">
-            <div style="height: 200px; background: #ddd; display: flex; align-items: center; justify-content: center; font-size: 4rem;">🚀</div>
+            <div style="height: 250px; background: #ddd; display: flex; align-items: center; justify-content: center; font-size: 4rem;">🚀</div>
             <div class="project-info">
                 <h3>Próximo Grande Projeto</h3>
                 <p>Sempre a aprender novas tecnologias para servir melhor o mercado de trabalho.</p>
                 <span style="color: #94a3b8; font-style: italic;">Em desenvolvimento...</span>
             </div>
         </div>
-
     </div>
 </div>
 
@@ -112,18 +126,20 @@
     <p>Vamos conversar?</p>
     <div class="social-links">
         <a href="https://github.com/teodorocucubicaweb.github.io">GitHub</a>
-        <a href="mailto:teodorowelb@gmail.com">E-mail</a> <!-- Corrigido com mailto: -->
+        <a href="teodorowelb@gmail.com">E-mail</a>
     </div>
     <p style="margin-top: 20px; font-size: 0.8rem; opacity: 0.6;">© 2024 - Criado com Fé e Código.</p>
-</footer>
 
-<!-- CLASSES ATUALIZADAS: Mudança de fab para fa-brands -->
-<div class="social-icons">
-    <a href="https://facebook.com/profile.php?id=61585821137131&milbextidrS0aB7S9Ucbxw6v" target="_blank" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
-    <a href="https://wa.me/954174857" target="_blank" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
-    <a href="https://youtube.com/seucanal" target="_blank" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
-    <a href="https://github.com/teodorocucubicaweb.github.io" target="_blank" class="social-icon"><i class="fa-brands fa-github"></i></a>
-</div>
+    <div class="social-icons">
+    <a href="https://facebook.com/profile.php?id=61585821137131&milbextidrS0aB7S9Ucbxw6v" target="_blank" class="social-icon" id="social-icon1" class="facebook"><i class="fab fa-facebook-f"></i></a>
+
+    <a href="https://wa.me/954174857" target="_blank" class="social-icon" id="social-icon2" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+
+    <a href="https://youtube.com/seucanal" target="_blank" class="social-icon" class="youtube" id="social-icon3"><i class="fab fa-youtube"></i></a>
+    
+    <a href="#" target="_blank" class="social-icon" id="social-icon4" class="instagram"><i class="fab fa-instagram"></i></a>
+  </div>
+</footer>
 
 </body>
 </html>
